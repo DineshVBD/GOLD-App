@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vbd.gold_feelyounger.MainActivity"
+    android:background="@drawable/animationlist"
+    android:id="@+id/relativelayout">
+
+    <TextView
+        android:id="@+id/nametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/dob"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="75dp"
+        android:fontFamily="casual"
+        android:text="NAME"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Enter your Name "
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/dobtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/newtextview"
+        android:layout_alignEnd="@+id/nametextView"
+        android:fontFamily="casual"
+        android:text="D.O.B"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dobtextview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Select the date"
+        android:textSize="19dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/proceedbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/custom_button"
+        android:onClick="proceed"
+        android:text="GO"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/newtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contacttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/dob"
+        android:layout_below="@+id/dob"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="casual"
+        android:text="EMERGENCY"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emergencynumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/contacttextview"
+        android:layout_below="@+id/contacttextview"
+        android:layout_marginTop="13dp"
+        android:onClick="contact"
+        android:text="Select a Contact"
+        android:textSize="19dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/wishtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="250dp"
+        android:fontFamily="cursive"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

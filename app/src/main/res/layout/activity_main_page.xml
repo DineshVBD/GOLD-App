@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vbd.gold_feelyounger.MainPageActivity"
+    android:background="@drawable/drawable_red_gradient">
+
+    <Button
+        android:id="@+id/emergencycontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/racing_sans_one"
+        android:onClick="findpage"
+        android:tag="1"
+
+        android:text="EMERGENCY CONTACT"
+        android:textSize="18sp"
+        android:background="@drawable/mainpagebutton"/>
+
+    <Button
+        android:id="@+id/sudokubutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/hospitalbutton"
+        android:layout_marginTop="21dp"
+        android:onClick="findpage"
+        android:tag="3"
+        android:text="PLAY SUDOKU"
+        android:fontFamily="@font/racing_sans_one"
+        android:textSize="18sp"
+        android:background="@drawable/mainpagebutton"
+        />
+
+    <Button
+        android:id="@+id/hospitalbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/emergencycontact"
+        android:layout_marginTop="21dp"
+        android:fontFamily="@font/racing_sans_one"
+        android:onClick="findpage"
+        android:tag="2"
+        android:text="FIND NEARBY HOSPITALS"
+        android:textSize="18sp"
+        android:background="@drawable/mainpagebutton"/>
+
+    <Button
+        android:id="@+id/alarmbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sudokubutton"
+        android:layout_marginTop="21dp"
+        android:onClick="findpage"
+        android:tag="4"
+        android:text="SET ALARMS"
+        android:fontFamily="@font/racing_sans_one"
+        android:textSize="18sp"
+        android:background="@drawable/mainpagebutton"/>
+
+    <Button
+        android:id="@+id/tipsbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/alarmbutton"
+        android:layout_marginTop="21dp"
+        android:onClick="findpage"
+        android:tag="5"
+        android:text="READ TIPS"
+        android:fontFamily="@font/racing_sans_one"
+        android:textSize="18sp"
+        android:background="@drawable/mainpagebutton"/>
+
+    <Button
+        android:id="@+id/aboutmebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tipsbutton"
+        android:layout_marginTop="21dp"
+        android:onClick="findpage"
+        android:tag="6"
+        android:text="ABOUT ME"
+        android:fontFamily="@font/racing_sans_one"
+        android:textSize="18sp"
+        android:background="@drawable/mainpagebutton"/>
+
+    <Button
+        android:id="@+id/aboutusbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/aboutmebutton"
+        android:layout_marginTop="21dp"
+        android:onClick="findpage"
+        android:tag="7"
+        android:text="ABOUT US"
+        android:fontFamily="@font/racing_sans_one"
+        android:textSize="18sp"
+        android:background="@drawable/mainpagebutton"/>
+
+</RelativeLayout>

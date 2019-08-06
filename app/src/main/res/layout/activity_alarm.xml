@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_purple_gradient"
+    tools:context="com.example.vbd.gold_feelyounger.AlarmActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:fontFamily="@font/artifika"
+        android:text="BREAKFAST"
+        android:textColor="@android:color/background_dark"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/breakfasttextview"
+        android:layout_marginTop="39dp"
+        android:fontFamily="@font/artifika"
+        android:text="LUNCH"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lunchsetbuton"
+        android:layout_marginTop="82dp"
+        android:fontFamily="@font/artifika"
+        android:text="DINNER"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dinnersetbutton"
+        android:layout_marginTop="78dp"
+        android:fontFamily="@font/artifika"
+        android:text="EXERCISE"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/breakfastsetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toStartOf="@+id/breakfastcancelbutton"
+        android:background="@drawable/alarmbutton"
+        android:fontFamily="@font/artifika"
+        android:text="SET" />
+
+    <Button
+        android:id="@+id/breakfastcancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/breakfastsetbutton"
+        android:background="@drawable/alarmbutton1"
+        android:fontFamily="@font/artifika"
+        android:text="CANCEL" />
+
+    <Button
+        android:id="@+id/lunchsetbuton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toStartOf="@+id/breakfastcancelbutton"
+        android:background="@drawable/alarmbutton"
+        android:fontFamily="@font/artifika"
+        android:text="SET" />
+
+    <Button
+        android:id="@+id/lunchcancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/lunchsetbuton"
+        android:layout_toEndOf="@id/lunchsetbuton"
+        android:background="@drawable/alarmbutton1"
+        android:fontFamily="@font/artifika"
+        android:text="CANCEL" />
+
+    <Button
+        android:id="@+id/dinnersetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toStartOf="@+id/lunchcancelbutton"
+        android:background="@drawable/alarmbutton"
+        android:fontFamily="@font/artifika"
+        android:text="SET" />
+
+    <Button
+        android:id="@+id/dinnercancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/dinnersetbutton"
+        android:layout_toEndOf="@+id/dinnersetbutton"
+        android:background="@drawable/alarmbutton1"
+        android:fontFamily="@font/artifika"
+        android:text="CANCEL" />
+
+    <Button
+        android:id="@+id/exercisesetbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toStartOf="@+id/dinnercancelbutton"
+        android:background="@drawable/alarmbutton"
+        android:fontFamily="@font/artifika"
+        android:text="SET" />
+
+    <Button
+        android:id="@+id/exercisecancelbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/exercisesetbutton"
+        android:layout_toEndOf="@+id/exercisesetbutton"
+        android:background="@drawable/alarmbutton1"
+        android:fontFamily="@font/artifika"
+        android:text="CANCEL" />
+
+    <TextView
+        android:id="@+id/breakfasttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/breakfastsetbutton"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:fontFamily="@font/artifika"
+        android:text="        OFF"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lunchtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/breakfasttextview"
+        android:layout_below="@+id/lunchsetbuton"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/artifika"
+        android:text="        OFF"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dinnertextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dinnersetbutton"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:fontFamily="@font/artifika"
+        android:text="        OFF"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/execisetextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:fontFamily="@font/artifika"
+        android:text="        OFF"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>
